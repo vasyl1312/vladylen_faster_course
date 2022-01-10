@@ -13,3 +13,8 @@ fs.writeFile(filePath, 'Hello NODE.JS', err => {
     if (err) throw err;
 console.log('File створено');
 })
+
+fs.readFile(filePath, 'utf-8',(err, content) => { 
+    if (err) throw err;
+   console.log(content);
+})

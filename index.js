@@ -61,6 +61,8 @@ const server = http.createServer((req, res) => {
     })
 })
 
-server.listen(3001, () => {
-    console.log('Server has been started...');
+const PORT = process.env.PORT || 3001;
+
+server.listen(PORT, () => {
+    console.log(`Server has been started on ${PORT}...`);
 })
